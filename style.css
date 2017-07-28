@@ -19,3 +19,47 @@ body {
     background-color: #f47cad;
     display: table;
 }
+
+.button_clear {
+    vertical-align: middle;
+    display: table-cell;
+    position: relative;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10.5px 62.5px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button_clear:after {
+    content: "";
+    background: #ffffff;
+    display: block;
+    position: absolute;
+    padding-top: 60%;
+    padding-left: 110%;
+    margin-left: -60px !important;
+    margin-top: -50%;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.button_clear:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+}
+
+.button_clear:active {
+    background-color: #924a67;
+}
