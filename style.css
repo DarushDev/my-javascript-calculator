@@ -1,0 +1,21 @@
+body {
+    background-color: #62C39B;
+}
+
+.calc_body {
+    width: 300px;
+    margin: 40px auto;
+}
+
+.calc_result {
+    padding: 15px;
+    background-color: white;
+    height: 100px;
+    text-align: right;
+}
+
+#calc_clear {
+    height: 55px;
+    background-color: #f47cad;
+    display: table;
+}
