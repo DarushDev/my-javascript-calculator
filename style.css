@@ -147,3 +147,50 @@ body {
 .button_operator:active {
     background-color: #1d6d7e;
 }
+
+.calc_numbers {
+    background-color: #3A3737;
+    height: 320px;
+}
+
+.button {
+    position: relative;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    float: left;
+    color: #A5A1A1;
+    padding: 24px 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 28px;
+    margin: 0px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button:after {
+    content: "";
+    background: #ffffff;
+    display: block;
+    position: absolute;
+    padding-top: 80%;
+    padding-left: 102%;
+    margin-left: -42px !important;
+    margin-top: -60%;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+}
+
+.button:active {
+    background-color: #282626;
+}
