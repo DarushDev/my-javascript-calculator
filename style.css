@@ -83,3 +83,18 @@ body {
 .button_clear:active {
     background-color: #924a67;
 }
+
+#btn-backspace i {
+    color: white;
+    width: 22px;
+    height: 34px;
+}
+
+#backspace {
+    display: table-cell;
+    vertical-align: middle;
+    color: gray;
+    padding-right: 4px;
+    width: 40px;
+    cursor: pointer;
+}
