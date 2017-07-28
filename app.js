@@ -79,6 +79,25 @@ $(document).ready(function(){
         }
     });
 
+    $("#btn-dot").click(function(){
+        if(isResult){
+            total.text("0.");
+            isResult = false;
+        } else if(total.text().indexOf(".") === -1){
+            total.text(total.text() + ".");
+        }
+
+        isOperatorClicked = false;
+    });
+
+    btnEquals.click(function(){
+        isResult = true;
+        distinct.text("");
+        total.text(round(eval(finalResult + total.text())));
+        isOperatorClicked = false;
+        finalResult = "";
+    });
+
     function round(value) {
         return Number(Math.round(value+'e'+4)+'e-'+4);
     }
