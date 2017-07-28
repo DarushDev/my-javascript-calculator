@@ -236,3 +236,14 @@ body {
 #btn-equals:active {
     background-color: #8a9516;
 }
+
+.raisedbox {
+    -webkit-box-shadow: 0 0 30px rgb(79, 80, 84);
+    -moz-box-shadow: 0 0 30px rgb(79, 80, 84);
+}
+
+.raisedbox-bottom {
+    -moz-box-shadow: 0 5px 20px rgba(20, 20, 20, 0.75);
+    -webkit-box-shadow: 0 5px 20px rgba(20, 20, 20, 0.75);
+    box-shadow: 0 5px 20px rgba(20, 20, 20, 0.75);
+}
