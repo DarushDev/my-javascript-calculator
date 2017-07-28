@@ -98,3 +98,52 @@ body {
     width: 40px;
     cursor: pointer;
 }
+
+.calc_operators {
+    text-align: center;
+    height: 68px;
+    margin: auto;
+    background-color: #31B7D3;
+}
+
+.button_operator {
+    position: relative;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 17px 28.87px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button_operator:after {
+    content: "";
+    background: #ffffff;
+    display: block;
+    position: absolute;
+    padding-top: 100%;
+    padding-left: 110%;
+    margin-left: -30px !important;
+    margin-top: -80%;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.button_operator:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+}
+
+.button_operator:active {
+    background-color: #1d6d7e;
+}
