@@ -14,6 +14,26 @@ body {
     text-align: right;
 }
 
+#distinct_result_main {
+    padding: 10px 0;
+    display: table;
+    width: 100%;
+}
+
+#distinct_result {
+    display: table-cell;
+    vertical-align: middle;
+    color: #B4B1BA;
+    font-size: 16px;
+}
+
+#total_result {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #575252;
+    font-size: 46px;
+}
+
 #calc_clear {
     height: 55px;
     background-color: #f47cad;
