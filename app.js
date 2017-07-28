@@ -98,6 +98,23 @@ $(document).ready(function(){
         finalResult = "";
     });
 
+    $("#btn-backspace").click(function(){
+        console.log(total.text().length);
+        if(total.text().length === 1){
+            total.text("0");
+            isResult = true;
+        } else {
+            total.text(total.text().substr(0, total.text().length-1));
+        }
+    });
+
+    $("#btn-clear").click(function(){
+        total.text("0");
+        distinct.text("");
+        finalResult = "";
+        isResult = true;
+    });
+
     function round(value) {
         return Number(Math.round(value+'e'+4)+'e-'+4);
     }
