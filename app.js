@@ -142,6 +142,14 @@ $(document).ready(function(){
 
         }
 
+        if(total.text().length <=10){
+            total.css("font-size","46px");
+        } else if(total.text().length > 10 && total.text().length <16){
+            total.css("font-size","32px");
+        } else {
+            total.css("font-size","24px");
+        }
+
     });
 
     function round(value) {
