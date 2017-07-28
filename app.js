@@ -115,6 +115,35 @@ $(document).ready(function(){
         isResult = true;
     });
 
+    $(document).click(function() {
+        if(distinct.text() === ""){
+            $("#distinct_result_main").css("display","none");
+
+            $("#total_result").css({
+                "display": "table-cell",
+                "vertical-align": "middle"
+            });
+
+            $(".calc_result").css({
+                "display": "table",
+                "width": "90%"
+            });
+
+        } else {
+            $("#distinct_result_main").css("display","table");
+
+            $("#total_result").css({
+                "display": "block"
+            });
+
+            $(".calc_result").css({
+                "display": "block"
+            });
+
+        }
+
+    });
+
     function round(value) {
         return Number(Math.round(value+'e'+4)+'e-'+4);
     }
