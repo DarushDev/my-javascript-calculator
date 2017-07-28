@@ -23,5 +23,36 @@ $(document).ready(function(){
         isOperatorClicked = false;
     });
 
+    btnDivide.click(function(){
+        if(!isOperatorClicked) {
+            isResult = true;
+            distinct.text(distinct.text() + total.text() + $(this).text());
+            finalResult = round(eval(finalResult + total.text()));
+            total.text(finalResult);
+            finalResult = finalResult + "/";
+            isOperatorClicked = true;
+        } else {
+            distinct.text(distinct.text().substr(0, distinct.text().length-1) + $(this).text());
+            finalResult = finalResult.substr(0, finalResult.length-1) + "/";
+        }
+    });
+
+    btnTimes.click(function(){
+        if(!isOperatorClicked) {
+            isResult = true;
+            distinct.text(distinct.text() + total.text() + $(this).text());
+            finalResult = round(eval(finalResult + total.text()));
+            total.text(finalResult);
+            finalResult = finalResult + "*";
+            isOperatorClicked = true;
+        } else {
+            distinct.text(distinct.text().substr(0, distinct.text().length-1) + $(this).text());
+            finalResult = finalResult.substr(0, finalResult.length-1) + "*";
+        }
+    });
+
+    function round(value) {
+        return Number(Math.round(value+'e'+4)+'e-'+4);
+    }
 
 });
